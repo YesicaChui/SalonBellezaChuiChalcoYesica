@@ -188,6 +188,20 @@ form{
 }
 
 .imgCarrusel{
-    height: 80vh;
+    height: 70vh;
     
+}
+div article .img-thumbnail{
+    min-height: 256px;
+}
+@media only Screen and (max-width:700px){
+    .imgCarrusel{
+        height: 40vh;
+        
+    }
+}
+@media only Screen and (min-width:1000px){
+    div article .img-thumbnail{
+        max-height: 256px;
+    }
 }
