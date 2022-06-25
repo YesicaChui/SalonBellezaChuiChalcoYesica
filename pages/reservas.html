@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas-SPA - Salon de belleza</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="datosPrincipales">
+            <!-- Telefono y Whatsapp serian acciones para llamar y enviar mensaje Whatsapp directo -->
+            <li>Telefono 952000249</li>
+            <li>Whatsapp</li>
+            <li><a href="ubicanos.html">Ubicanos</a></li>
+        </ul>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html#mujer">Mujer</a></li>
+            <li><a href="servicios.html#varon">Hombre</a></li>
+            <!--Similar a contactos  -->
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="horario.html">Horario</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="../img/logo.jpg" alt="el logo de la empresa" class="logoSecundario">
+    </header>
+    <main>
+        <h1 class="miTitulo tituloSecundario">Reserva tu cita</h1>
+        <section class="centrarElemento">
+            <form action="">
+                <label class="textLabel" for="nombre">Nombre</label>
+                <input class="inputText" type="text" id="nombre" placeholder="Ingrese su Nombre">
+                <br>
+                <br>
+                <label class="textLabel" for="apellido">Apellido</label>
+                <input  class="inputText" type="text" id="apellido" placeholder="Ingrese su Apellido">
+                <br><br>
+                <label class="textLabel" for="">Sexo del solicitante</label>
+                <br><br>
+                <input type="radio" name="sexo" id="Hombre">
+                <label for="Hombre">Hombre</label>
+                <input type="radio" name="sexo" id="Mujer">
+                <label for="Mujer">Mujer</label>
+                <br><br>
+                <label class="textLabel" for="sucursal">Seleccione una Sucursal</label>
+                <br>
+                <br>
+                <select name="sucursal" id="sucursal" class="inputText">
+                    <option value="">Seleccionar</option>
+                    <option value="tacna">Tacna</option>
+                    <option value="arequipa">Arequipa</option>
+                    <option value="puno">Puno</option>
+                </select>
+                <br><br>
+                <label class="textLabel" for="">Servicios a solicitar</label>
+                <br><br>
+                <input type="checkbox" name="manicura" id="manicura">
+                <label for="manicura">Manicura</label>
+                <br>
+                <input type="checkbox" name="pedicura" id="Pedicura">
+                <label for="Pedicura">Pedicura</label>
+                <br>
+                <input type="checkbox" name="pestaña" id="Pestanas">
+                <label for="Pestanas">Pestañas</label>
+                <br><br>
+                <input type="submit" value="Solicitar cita">
+                <input type="reset" value="Cancelar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Dolorum culpa nulla nobis, perferendis autem quisquam deserunt minima quidem ut nam aspernatur recusandae ex cupiditate et temporibus debitis labore.</p>
+        <img src="../img/facebook.png" alt="logo de facebook">
+        <img src="../img/twitter.png" alt="logo de twitter">
+        <img src="../img/whatsapp.png" alt="logo whatsapp">
+    </footer>
+</body>
+</html>
