@@ -23,8 +23,10 @@ p{
     color: #288767;    
 }
 .logo{
-    width: 30px;
+    width: 50px;
     display: inline-block;
+    border-radius: 25px;
+    border: solid 1px green;  
 }
 nav ul{
     text-align: center;
@@ -109,14 +111,22 @@ main article{
     border-radius: 35px;
 }
 
-article section button{
-   border-radius: 20px;
-   padding: 5px;
-   font-size: 1.2rem;
-   border:solid 2px darkmagenta;
-   background-color: rgb(250, 220, 250);
+section article  .btn{
+    border-radius: 20px;
+    padding: 5px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border:solid 2px darkmagenta;
+    /* background-color: rgb(250, 220, 250); */
+    background: linear-gradient(to top,#DEC6D0,rgb(230, 133, 230));
 }
-
+section article .btn:hover{
+    transform: scale(0.95,0.95);
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    border:solid 2px darkmagenta;
+}
 .capitalLetter{
     font-size: 4rem;
 }
@@ -193,6 +203,23 @@ form{
 }
 div article .img-thumbnail{
     min-height: 256px;
+}
+
+.bg-miNav{
+    background: linear-gradient(to top,#DEC6D0,#79d2b4);
+}
+
+footer{
+    /* background-color: aqua; */
+    background: linear-gradient(to top,rgb(34, 215, 215),rgb(230, 242, 242));
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+  footer img{
+    width: 70px;
+    margin: 0px 20px;
 }
 @media only Screen and (max-width:700px){
     .imgCarrusel{
