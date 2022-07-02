@@ -1,90 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horario-SPA - Salon de belleza</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario-SPA - Salon de belleza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+  <div class="container">
     <!-- iniciando nav de bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-miNav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="el logo de la empresa" class="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contacto
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Telefono 952000249</a></li>
-                  <li><a class="dropdown-item" href="#">Whatsapp</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="ubicanos.html">Ubicanos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html#mujer">Mujer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html#varon">Hombre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="reservas.html">Reservas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="horario.html">Horario</a>
-              </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="el logo de la empresa"
+            class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contacto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Telefono 952000249</a></li>
+                <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="ubicanos.html">Ubicanos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html#mujer">Mujer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html#varon">Hombre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="horario.html">Horario</a>
+            </li>
 
-            </ul>
-          </div>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- finanlizando nav bootstrap -->
     <header>
-        <img src="../img/logo.jpg" alt="el logo de la empresa" class="logoSecundario">
+      <img src="../img/logo.jpg" alt="el logo de la empresa" class="logoSecundario">
     </header>
     <main>
-        <h1 class="miTitulo tituloSecundario">Horario de Atención</h1>
-        <section class="centrarElemento">
-            <table class="miTabla">
-                <tr>
-                    <th>Turno</th>
-                    <th>Lunes a viernes</th>
-                    <th>Sabados</th>
-                    <th>Domingos y feriados </th>   
-                </tr>
-                <tr>
-                    <td>Mañana</td>
-                    <td>8am-1pm</td>
-                    <td>9am-1pm</td>
-                    <td>9am-12pm</td>
-                </tr>
-                <tr>
-                    <td>Tarde</td>
-                    <td>3pm-8pm</td>
-                    <td>3pm-7pm</td>
-                    <td>Previa cita</td>
-                </tr>
-            </table>            
-        </section>
-        
+      <h1 class="miTitulo tituloSecundario">Horario de Atención</h1>
+      <section class="centrarElemento">
+        <table class="miTabla">
+          <tr>
+            <th>Turno</th>
+            <th>Lunes a viernes</th>
+            <th>Sabados</th>
+            <th>Domingos y feriados </th>
+          </tr>
+          <tr>
+            <td>Mañana</td>
+            <td>8am-1pm</td>
+            <td>9am-1pm</td>
+            <td>9am-12pm</td>
+          </tr>
+          <tr>
+            <td>Tarde</td>
+            <td>3pm-8pm</td>
+            <td>3pm-7pm</td>
+            <td>Previa cita</td>
+          </tr>
+        </table>
+      </section>
+
     </main>
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Dolorum culpa nulla nobis, perferendis autem quisquam deserunt minima quidem ut nam aspernatur recusandae ex cupiditate et temporibus debitis labore.</p>
-        <img src="../img/facebook.png" alt="logo de facebook">
-        <img src="../img/twitter.png" alt="logo de twitter">
-        <img src="../img/whatsapp.png" alt="logo whatsapp">
+      <p>Se parte de la experiencia de nuestros servicios y productos del Salon de Belleza Yesica no te arrepentiras</p>
+      <img src="../img/facebook.png" alt="logo de facebook">
+      <img src="../img/twitter.png" alt="logo de twitter">
+      <img src="../img/whatsapp.png" alt="logo whatsapp">
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
