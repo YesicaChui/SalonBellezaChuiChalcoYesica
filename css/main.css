@@ -20,3 +20,153 @@ nav ul li {
   display: inline-block;
   border-radius: 25px;
   border: solid 1px green; }
+
+header {
+  text-align: center; }
+
+header img {
+  width: 80%;
+  border-radius: 10px; }
+
+.imgCarrusel {
+  height: 70vh; }
+  @media only Screen and (max-width: 700px) {
+    .imgCarrusel {
+      height: 40vh; } }
+
+.miTitulo {
+  text-align: center;
+  font-family: "Merienda";
+  font-size: 3rem;
+  color: darkmagenta;
+  font-weight: bold; }
+
+body {
+  background-image: url(../img/burbujas_fondo.jpg);
+  background-size: 150px;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
+section article p {
+  font-size: 1.5rem;
+  font-weight: 900; }
+
+section article .btn {
+  border-radius: 20px;
+  padding: 5px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: solid 2px darkmagenta;
+  background: linear-gradient(to top, #DEC6D0, #e685e6); }
+  section article .btn:hover {
+    transform: scale(0.95, 0.95);
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    border: solid 2px darkmagenta;
+    transition: all 0.3s; }
+
+.subtitulo {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem; }
+
+main div {
+  text-align: center;
+  margin: 50px; }
+  main div img {
+    width: 20%; }
+
+.logoSecundario {
+  width: 10%;
+  border-radius: 35px; }
+
+.capitalLetter {
+  font-size: 4rem; }
+
+.miMapa {
+  display: inline-block;
+  width: 80%;
+  border: solid 3px #72BEA2;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0px; }
+
+iframe {
+  width: 100%;
+  border: none; }
+
+.tituloSecundario {
+  color: #EB8078; }
+
+.miTabla {
+  display: inline-block;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  background-color: #DEC6D0;
+  border: 1px solid #EB8078;
+  border-radius: 10px;
+  overflow: hidden; }
+
+th {
+  font-size: 1.5rem;
+  background-color: #a3bbb2;
+  border: 1px solid #EB8078;
+  padding: 5px; }
+
+td {
+  border: 1px solid #EB8078;
+  padding: 5px; }
+
+form {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 30%;
+  display: inline-block;
+  padding: 20px;
+  border: solid 1px;
+  background-color: #b5ebd7;
+  border-radius: 20px;
+  font-family: "Merienda"; }
+
+.inputText {
+  text-align: center;
+  width: 90%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid; }
+
+.textLabel {
+  font-size: 1.2rem;
+  color: #EB8078; }
+
+div article .img-thumbnail {
+  min-height: 256px; }
+  @media only Screen and (min-width: 1000px) {
+    div article .img-thumbnail {
+      max-height: 256px; } }
+
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.centrarElemento {
+  text-align: center; }
+
+footer {
+  background: linear-gradient(to top, #DEC6D0, #72BEA2);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center; }
+  footer img {
+    width: 70px;
+    margin: 0px 20px; }
+  footer p {
+    font-weight: 900; }

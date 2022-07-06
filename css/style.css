@@ -32,24 +32,6 @@ nav ul li {
     border: solid 1px green;
 }
 
-.miTitulo {
-    text-align: center;
-    font-family: 'Merienda';
-    font-size: 3rem;
-    color: darkmagenta;
-    font-weight: bold;
-}
-
-
-
-
-body {
-    background-image: url(../img/burbujas_fondo.jpg);
-    background-size: 150px;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
-
 header {
     text-align: center;
 }
@@ -58,7 +40,26 @@ header img {
     width: 80%;
     border-radius: 10px;
 }
+.imgCarrusel {
+    height: 70vh;
+}
 
+
+
+.miTitulo {
+    text-align: center;
+    font-family: 'Merienda';
+    font-size: 3rem;
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(../img/burbujas_fondo.jpg);
+    background-size: 150px;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
 section article p {
     font-size: 1.5rem;
@@ -130,7 +131,7 @@ iframe {
     display: inline-block;
     font-size: 1.2rem;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #DEC6D0;
     border: 1px solid #EB8078;
     border-radius: 10px;
     overflow: hidden;
@@ -177,15 +178,20 @@ form {
 
 }
 
-.imgCarrusel {
-    height: 70vh;
 
-}
 
 div article .img-thumbnail {
     min-height: 256px;
 }
-
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 footer {
@@ -204,15 +210,7 @@ footer p{
     font-weight: 900;
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 
 @media only Screen and (max-width:700px) {
