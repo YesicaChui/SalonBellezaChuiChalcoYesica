@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+html {
+  font-size: 62.5%; }
+
+nav ul li {
+  font-size: 2rem;
+  margin: 0px 20px;
+  font-weight: bold; }
+
+.nav-link:hover:not(.dropdown-toggle),
+.navbar-brand:hover {
+  transform: scale(1.3, 1.3);
+  transition: transform 0.3s; }
+
+.bg-miNav {
+  background: linear-gradient(to top, #DEC6D0, #72BEA2); }
+
+.logo {
+  width: 50px;
+  display: inline-block;
+  border-radius: 25px;
+  border: solid 1px green; }

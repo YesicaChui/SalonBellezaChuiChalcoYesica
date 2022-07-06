@@ -1,0 +1,27 @@
+
+nav{
+  ul{
+    li{
+        font-size: $textGrandeS;
+        margin: 0px 20px;  
+        font-weight: $weightBold;
+    }
+  }  
+}
+
+.nav-link:hover:not(.dropdown-toggle),
+.navbar-brand:hover {
+    transform: scale(1.3, 1.3);
+    transition: transform 0.3s;
+}
+
+.bg-miNav {
+    background: linear-gradient(to top, $btninicioColor, $greenBorderMapaColor);
+}
+
+.logo {
+    width: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    border: solid 1px $greenColor;
+}
