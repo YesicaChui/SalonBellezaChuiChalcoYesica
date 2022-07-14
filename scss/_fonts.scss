@@ -4,12 +4,20 @@ html {
 }
 
 $fontMerienda:'Merienda';
-$textGrandeL:4rem;
-$textGrandeM:3rem;
-$textGrandeS:2rem;
-$textChikiL:1.5rem;
-$textChikiM:1.3rem;
-$textChikiS:1.2rem;
+
+
+//usando map de tamaños de textos
+$tamanoTexto:(
+    textGrandeL:4rem,
+    textGrandeM:3rem,
+    textGrandeS:2rem,
+    textChikiL:1.5rem,
+    textChikiM:1.3rem,
+    textChikiS:1.2rem,
+);
+
+//fin
+
 
 $weightGrueso:900;
 $weightBold:bold;

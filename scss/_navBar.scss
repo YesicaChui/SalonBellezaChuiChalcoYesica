@@ -2,7 +2,7 @@
 nav{
   ul{
     li{
-        font-size: $textGrandeS;
+        font-size: map-get($tamanoTexto, textGrandeS);
         margin: 0px 20px;  
         font-weight: $weightBold;
     }

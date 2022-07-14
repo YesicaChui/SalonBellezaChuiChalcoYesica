@@ -1,6 +1,6 @@
 footer {
     background: linear-gradient(to top, $btninicioColor, $greenBorderMapaColor);
-    font-size: $textChikiL;
+    font-size:map-get($tamanoTexto, textChikiL);
     font-weight: $weightBold;
     padding: 20px;
     text-align: center;

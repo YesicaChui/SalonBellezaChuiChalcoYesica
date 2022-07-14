@@ -34,12 +34,18 @@ header img {
     .imgCarrusel {
       height: 40vh; } }
 
-.miTitulo {
+.centerBold, .miTitulo, .subtitulo {
   text-align: center;
+  font-weight: bold; }
+
+.borderPadding, th, td {
+  border: 1px solid #EB8078;
+  padding: 5px; }
+
+.miTitulo {
   font-family: "Merienda";
   font-size: 3rem;
-  color: darkmagenta;
-  font-weight: bold; }
+  color: darkmagenta; }
 
 body {
   background-image: url(../img/burbujas_fondo.jpg);
@@ -67,8 +73,6 @@ section article .btn {
     transition: all 0.3s; }
 
 .subtitulo {
-  text-align: center;
-  font-weight: bold;
   font-style: italic;
   font-size: 2rem; }
 
@@ -111,13 +115,7 @@ iframe {
 
 th {
   font-size: 1.5rem;
-  background-color: #a3bbb2;
-  border: 1px solid #EB8078;
-  padding: 5px; }
-
-td {
-  border: 1px solid #EB8078;
-  padding: 5px; }
+  background-color: #a3bbb2; }
 
 form {
   font-size: 1.2rem;

@@ -1,11 +1,33 @@
 
-
-.miTitulo {
+//clases centerBold y borderPadding para usarlo en include
+.centerBold{
     text-align: center;
-    font-family: $fontMerienda;
-    font-size: $textGrandeM;
-    color: $magentacolor;
     font-weight: $weightBold;
+}
+
+.borderPadding{
+    border: 1px solid $tituloSecAndBorderColor;
+    padding: 5px;
+}
+
+//fin de clases de include
+//mixin
+@mixin sizeWeight($size,$weight){
+    font-size:$size;
+    font-weight:$weight;
+}
+
+@mixin borderAndRadius($border,$radius){
+    border: $border;
+    border-radius: $radius;
+}
+
+
+.miTitulo {    
+    font-family: $fontMerienda;
+    font-size: map-get($tamanoTexto, textGrandeM);
+    color: $magentacolor;
+    @extend .centerBold;   
 }
 
 body {
@@ -18,20 +40,18 @@ body {
 section{
     article{
         p{
-            font-size:$textChikiL;
-            font-weight: $weightGrueso;
+            @include sizeWeight(map-get($tamanoTexto, textChikiL),$weightGrueso)
         }
         .btn{
             border-radius: 20px;
             padding: 5px;
             color: $blackColor;
-            font-size: $textChikiS;
-            font-weight: $weightGrueso;
+            @include sizeWeight( map-get($tamanoTexto, textChikiS),$weightGrueso );
             border: solid 2px $magentacolor;
             background: linear-gradient(to top, $btninicioColor, $btnfinalColor);
             &:hover{
                 transform: scale(0.95, 0.95);
-                font-size: $textChikiM;
+                font-size: map-get($tamanoTexto, textChikiM);
                 transition: all 0.3s;
                 border: solid 2px $magentacolor;
                 transition: all 0.3s;
@@ -40,11 +60,10 @@ section{
     }
 }
 
-.subtitulo {
-    text-align: center;
-    font-weight: $weightBold;
+.subtitulo {   
+    @extend .centerBold;
     font-style: italic;
-    font-size: $textGrandeS;
+    font-size: map-get($tamanoTexto, textGrandeS);
 }
 
 main{
@@ -63,14 +82,13 @@ main{
 }
 
 .capitalLetter {
-    font-size: $textGrandeL;
+    font-size: map-get($tamanoTexto, textGrandeL);
 }
 
 .miMapa {
     display: inline-block;
     width: 80%;
-    border: solid 3px $greenBorderMapaColor;
-    border-radius: 20px;
+    @include borderAndRadius(solid 3px $greenBorderMapaColor, 20px);
     overflow: hidden;
     margin: 0px;
 }
@@ -86,29 +104,27 @@ iframe {
 
 .miTabla {
     display: inline-block;
-    font-size: $textChikiS;
+    font-size:  map-get($tamanoTexto, textChikiS);
     border-collapse: collapse;
     background-color: $btninicioColor;
-    border: 1px solid $tituloSecAndBorderColor;
-    border-radius: 10px;
+    @include borderAndRadius(1px solid $tituloSecAndBorderColor,10px );
     overflow: hidden;
 }
 
+
+
 th {
-    font-size: $textChikiL;
+    font-size:  map-get($tamanoTexto, textChikiL);
     background-color: $tituloTablaColor;
-    border: 1px solid $tituloSecAndBorderColor;
-    padding: 5px;
+    @extend .borderPadding;
 }
 
 td {
-    border: 1px solid $tituloSecAndBorderColor;
-    padding: 5px;
+    @extend .borderPadding;
 }
 
 form {
-    font-size: $textChikiS;
-    font-weight: $weightBold;
+    @include sizeWeight( map-get($tamanoTexto, textChikiS),$weightBold );
     width: 30%;
     display: inline-block;
     padding: 20px;
@@ -121,13 +137,13 @@ form {
 .inputText {
     text-align: center;
     width: 90%;
-    font-size: $textChikiS;
+    font-size: map-get($tamanoTexto, textChikiS);
     border-radius: 5px;
     border: 1px solid;
 }
 
 .textLabel {
-    font-size: $textChikiS;
+    font-size: map-get($tamanoTexto, textChikiS);
     color: $tituloSecAndBorderColor;
 }
 
