@@ -127,6 +127,9 @@ form {
   background-color: #b5ebd7;
   border-radius: 20px;
   font-family: "Merienda"; }
+  @media only Screen and (max-width: 720px) {
+    form {
+      width: 80%; } }
 
 .inputText {
   text-align: center;
@@ -166,5 +169,8 @@ footer {
   footer img {
     width: 70px;
     margin: 0px 20px; }
+    @media only Screen and (max-width: 720px) {
+      footer img {
+        width: 40px; } }
   footer p {
     font-weight: 900; }

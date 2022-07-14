@@ -7,6 +7,9 @@ footer {
     img{
         width: 70px;
         margin: 0px 20px;
+        @media only Screen and (max-width:720px) {
+            width: 40px;
+        }
     }
     p{
         font-weight: $weightGrueso;
