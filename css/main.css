@@ -127,6 +127,12 @@ form {
   background-color: #b5ebd7;
   border-radius: 20px;
   font-family: "Merienda"; }
+  form input, form select {
+    margin-bottom: 20px; }
+  form label {
+    margin-bottom: 10px; }
+  form .cajaForm {
+    margin: 0px; }
   @media only Screen and (max-width: 720px) {
     form {
       width: 80%; } }

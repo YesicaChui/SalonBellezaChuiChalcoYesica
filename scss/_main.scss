@@ -132,6 +132,16 @@ form {
     background-color: $greenFormColor;
     border-radius: 20px;
     font-family: $fontMerienda;
+    input,select{
+        margin-bottom: 20px;
+    }
+    label{
+        margin-bottom: 10px;
+    }
+    .cajaForm{
+        margin: 0px;
+    }
+    
     @media only Screen and (max-width:720px) {
         width: 80%;
     }

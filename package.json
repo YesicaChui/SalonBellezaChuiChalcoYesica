@@ -1,7 +1,7 @@
 {
-  "name": "desafio6",
+  "name": "salon_belleza_yesica",
   "version": "1.0.0",
-  "description": "",
+  "description": "WebSite del salon de Belleza Yesica",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
