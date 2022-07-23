@@ -171,7 +171,8 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5px; }
   footer img {
     width: 70px;
     margin: 0px 20px; }
